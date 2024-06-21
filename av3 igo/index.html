@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=number],
+        input[type=text] {
+            border: 2px solid black;
+            height: 16pt;
+            border-radius: 16px;
+            padding-left: 8px;
+            padding-right: 8px;
+            width: 70pt;
+        }
+
+        input[type=text] {
+            width: 144pt;
+        }
+
+        label,
+        body {
+            font-family: sans-serif;
+            font-size: 14pt;
+            color: black;
+            font-weight: bold;
+        }
+
+        input[disabled] {
+            background-color: lightgray;
+        }
+
+        .dadin {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        Ficha de RPG
+    </h2>
+    <p>
+        <label>Nome:</label>
+        <input type=text id="nome" />
+        <label>Nível:</label>
+        <input type=number id="nivel" />
+    </p>
+
+    <p>
+        <label>Força:</label>
+        <input type=number id="forca" />
+        <label>Poder de Ataque:</label>
+        <input type=number id="poder" disabled />
+    </p>
+
+    <p>
+        <label>Agilidade:</label>
+        <input type=number id="agilidade" />
+        <label>Armadura:</label>
+        <input type=number id="armadura" />
+        <label>Defesa:</label>
+        <input type=number id="defesa" disabled />
+    </p>
+
+    <p>
+    <label>Resultado do Dado:</label>
+    <input type=number id="dado" disabled />
+    </p>
+
+    <button id="dequatro" class="dadin" id = "dados" onclick="console.log(vcrolacomomeurolo(4))">
+        Rolar um D4
+    </button>
+
+    <button id="deseix" class="dadin" id = "dados" onclick="console.log(vcrolacomomeurolo(6))">
+        Rolar um D6
+    </button>
+
+    <button id="deoito" class="dadin" id = "dados" onclick="console.log(vcrolacomomeurolo(8))">
+        Rolar um D8
+    </button>
+
+    <button id="dedeix" class="dadin" id = "dados" onclick="console.log(vcrolacomomeurolo(10))">
+        Rolar um D10
+    </button>
+
+    <button id="dedeuce" class="dadin" id = "dados" onclick="console.log(vcrolacomomeurolo(12))">
+        Rolar um D12
+    </button>
+
+    <button id="davinci" class="dadin" id = "dados" onclick="console.log(vcrolacomomeurolo(20))">
+        Rolar um D20
+    </button>
+
+    <button id="decemvezeslaele" class = "dadin" id = "dados" onclick="console.log(vcrolacomomeurolo(100))">
+        Rolar um D100
+    </button>
+    
+    <button id="demilvezeslaele" class = "dadin" id = "dados" onclick="console.log(vcrolacomomeurolo(1000))">
+        Rolar um D1000
+    </button>
+    
+    <!-- <p><img  width = "300"src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHYwZDNnY3p1N3B5ZjI5azB0bWY2c2F4bXhzZXF3dHJpc3FudjhmYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oOBTO2UcSoaBJewZT0/giphy.webp"/></p> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
